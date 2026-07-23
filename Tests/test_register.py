@@ -33,6 +33,13 @@ def test_register(page):
     assert page.locator("text=Logged in as jahan").is_visible()
     page.locator("a[href='/delete_account']").click()
 
+def test_register_existing_mail(page):
+    existing_mail_reg = RegisterPage(page)
+    existing_mail_reg.register("jahan","ij@gmail.com")
+    assert page.locator("text=Email Address already exist!").is_visible()
+
+
+
 
 
 
