@@ -1,7 +1,7 @@
 import time
 
-from Pages.account_info import AccountInfo
-from Pages.register_page import RegisterPage
+from Pages.Register.account_info import AccountInfo
+from Pages.Register.register_page import RegisterPage
 from conftest import page
 
 def test_register(page):

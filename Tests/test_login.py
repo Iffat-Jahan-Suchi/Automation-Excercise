@@ -1,4 +1,4 @@
-from Pages.login_page import LoginPage
+from Pages.Login.login_page import LoginPage
 
 def test_valid_login(page):
     page.locator("//a[normalize-space()='Signup / Login']").click()

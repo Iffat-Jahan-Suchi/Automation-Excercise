@@ -9,3 +9,4 @@ def page():
      page.goto("https://automationexercise.com/")
      yield page
      page.close()
+     browser.close()
