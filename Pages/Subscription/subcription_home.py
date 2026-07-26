@@ -6,9 +6,17 @@ class SubscriptionHome:
         self.page=page
         self.locator=SubscriptionHomeLoc(page)
 
-    def subsciption_home(self,email):
+    def subscription_home(self,email):
         self.locator.footer.scroll_into_view_if_needed()
         assert self.locator.subscription.is_visible()
         self.page.wait_for_timeout(3000)
         self.locator.email.fill(email)
         self.locator.arrow.click()
+
+    def subscription_cart(self,email):
+        self.locator.cart_button.click()
+        assert self.locator.subscription.is_visible()
+        self.page.wait_for_timeout(3000)
+        self.locator.email.fill(email)
+        self.locator.arrow.click()
+        assert self.locator.success_msg.is_visible()

@@ -13,3 +13,21 @@ class ProductLoc:
         self.availability = page.locator("//b[normalize-space()='Availability:']")
         self.condition = page.locator("//b[normalize-space()='Condition:']")
         self.brand = page.locator("//b[normalize-space()='Brand:']")
+
+
+        #first product
+        self.first_product = page.locator(".product-image-wrapper").nth(0)
+        self.first_name = page.locator(".productinfo p").nth(0)
+        self.first_price = page.locator(".productinfo h2").nth(0)
+        self.add_cart=self.page.locator("//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[1]//div[2]//div[1]//a[1]")
+
+        #2nd product
+        self.second_product = page.locator(".product-image-wrapper").nth(1)
+        self.second_name = page.locator(".productinfo p").nth(1)
+        self.second_price = page.locator(".productinfo h2").nth(1)
+        self.add_sec_cart=self.page.locator("//div[3]//div[1]//div[1]//div[2]//div[1]//a[1]")
+
+        #add to cart and continue shop
+        self.modal =self.page.locator("#cartModal")
+        self.continue_btn=self.modal.get_by_role("button", name="Continue Shopping")
+        self.view_cart_btn=self.modal.locator("//u[normalize-space()='View Cart']")
