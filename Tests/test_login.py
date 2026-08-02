@@ -4,8 +4,10 @@ def test_valid_login(page):
     page.locator("//a[normalize-space()='Signup / Login']").click()
     assert page.locator("text=Login to your account").is_visible()
     page.wait_for_timeout(3000)
+    console.log("hello world banladesh")
     login=LoginPage(page)
-    login.credential("ij@gmail.com","123456")
+    console.log("phy you you you")
+    login.credential("ij@gmail.com","ontor")
     assert page.locator("text=Logout").is_visible()
 
 
