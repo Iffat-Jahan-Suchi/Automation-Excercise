@@ -3,10 +3,10 @@ from Pages.login_page import LoginPage
 def test_valid_login(page):
     page.locator("//a[normalize-space()='Signup / Login']").click()
     assert page.locator("text=Login to your account").is_visible()
-    page.wait_for_timeout(2000)
-    console.log("hello world")
+    page.wait_for_timeout(3000)
+    console.log("hello world banladesh")
     login=LoginPage(page)
-    console.log("suchi")
+    console.log("phy you you you")
     login.credential("ij@gmail.com","ontor")
     assert page.locator("text=Logout").is_visible()
 
