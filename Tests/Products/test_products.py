@@ -15,4 +15,10 @@ def test_add_to_cart(page):
     CartList.verify_first_product(first_name, first_price)
     CartList.verify_second_product(second_name, second_price)
 
+def test_verify_product_quantity(page):
+    addToCart = AddProducts(page)
+    CartList = CartPage(page)
+    addToCart.add_product_with_quantity()
+    CartList.verify_quantity()
+
 

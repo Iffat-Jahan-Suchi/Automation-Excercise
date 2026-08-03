@@ -13,3 +13,5 @@ class Cart:
         self.sec_product_price = self.page.locator(".cart_price p").nth(1)
         self.sec_product_qty = self.page.locator(".cart_quantity button").nth(1)
         self.sec_total = page.locator(".cart_total p").nth(1)
+
+        self.cart_qty=page.locator(".cart_quantity button")

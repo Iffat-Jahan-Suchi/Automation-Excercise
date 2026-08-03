@@ -7,6 +7,7 @@ class CartPage:
         self.page=page
         self.locator=Cart(page)
 
+
     def verify_first_product(self, name, price):
         assert self.locator.first_product_name.inner_text() == name
 
@@ -24,4 +25,12 @@ class CartPage:
         assert self.locator.sec_product_qty.inner_text() == "1"
 
         assert self.locator.sec_total.inner_text() == price
+
+
+
+    def verify_quantity(self):
+        quantity = self.locator.cart_qty.inner_text()
+        print(quantity)
+        assert quantity == "4"
+
 

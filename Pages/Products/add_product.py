@@ -28,3 +28,10 @@ class AddProducts:
         self.page.wait_for_timeout(3000)
         return name,price
 
+    def add_product_with_quantity(self):
+        self.locator.view_product.click()
+        assert self.locator.product_information.is_visible()
+        self.locator.increment_qty_btn.fill("4")
+        self.locator.add_to_cart.click()
+        self.locator.view_cart.click()
+

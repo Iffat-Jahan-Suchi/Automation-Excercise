@@ -31,3 +31,10 @@ class ProductLoc:
         self.modal =self.page.locator("#cartModal")
         self.continue_btn=self.modal.get_by_role("button", name="Continue Shopping")
         self.view_cart_btn=self.modal.locator("//u[normalize-space()='View Cart']")
+
+        #home page view product loc
+        self.view_product=page.locator("a[href='/product_details/1']")
+        self.product_information = page.locator(".product-information")
+        self.increment_qty_btn=page.locator("#quantity")
+        self.add_to_cart = page.locator("button.cart")
+        self.view_cart = page.locator("u")

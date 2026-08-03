@@ -1,5 +1,8 @@
+import pytest
+
 from Pages.Login.login_page import LoginPage
 
+@pytest.mark.smoke
 def test_valid_login(page):
     page.locator("//a[normalize-space()='Signup / Login']").click()
     assert page.locator("text=Login to your account").is_visible()
@@ -8,7 +11,7 @@ def test_valid_login(page):
     login.credential("ij@gmail.com","123456")
     assert page.locator("text=Logout").is_visible()
 
-
+@pytest.mark.smoke
 def test_invalid_login(page):
     page.locator("//a[normalize-space()='Signup / Login']").click()
     assert page.locator("text=Login to your account").is_visible()
@@ -16,7 +19,7 @@ def test_invalid_login(page):
     login=LoginPage(page)
     login.credential("ij@gmail.com","1234")
     assert page.locator("text=Your email or password is incorrect!").is_visible()
-
+@pytest.mark.smoke
 def test_logout(page):
     page.locator("//a[normalize-space()='Signup / Login']").click()
     assert page.locator("text=Login to your account").is_visible()
