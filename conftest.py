@@ -4,8 +4,14 @@ from playwright.sync_api import sync_playwright
 @pytest.fixture()
 def page():
  with sync_playwright() as p:
-     browser=p.chromium.launch(headless=False)
-     page=browser.new_page()
+     browser = p.chromium.launch(
+         headless=False,
+         args=["--start-maximized"]
+     )
+
+     context = browser.new_context(no_viewport=True)
+     page=context.new_page()
      page.goto("https://automationexercise.com/")
      yield page
-     page.close()
+     context.close()
+     browser.close()
