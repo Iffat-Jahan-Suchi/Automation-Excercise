@@ -33,4 +33,13 @@ class CartPage:
         print(quantity)
         assert quantity == "4"
 
+    def verify_cart_page(self):
+        self.locator.cart_page.wait_for()
+
+    def proceed_to_checkout(self):
+        self.locator.proceed_to_checkout.click()
+
+    def click_register_login(self):
+        self.locator.register_login.click()
+
 
