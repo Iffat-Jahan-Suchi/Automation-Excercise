@@ -16,6 +16,7 @@ class HomePage:
         self.locator.products_button.click()
 
         # First product
+        self.locator.first_product.scroll_into_view_if_needed()
         self.locator.first_product.hover()
         self.locator.first_add_to_cart.click()
 
@@ -23,6 +24,7 @@ class HomePage:
         self.locator.continue_shopping.click()
 
         # Second product
+        self.locator.first_product.scroll_into_view_if_needed()
         self.locator.second_product.hover()
         self.locator.second_add_to_cart.click()
 
