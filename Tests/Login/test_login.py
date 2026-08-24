@@ -8,7 +8,7 @@ def test_valid_login(page):
     assert page.locator("text=Login to your account").is_visible()
     page.wait_for_timeout(3000)
     login=LoginPage(page)
-    login.credential("ij@gmail.com","ontor")
+    login.credential("ij@gmail.com","123456")
     assert page.locator("text=Logout").is_visible()
 
 @pytest.mark.smoke
