@@ -50,3 +50,9 @@ class HomeLocators:
         self.cart_button = page.locator(
             'a[href="/view_cart"]'
         ).first
+
+        self.signup_login = page.get_by_text("Signup / Login")
+        self.logged_in_as = page.locator("li").filter(has_text="Logged in as")
+        self.cart = page.get_by_text("Cart", exact=True)
+        self.delete_account = page.get_by_text("Delete Account")
+        self.continue_button = page.get_by_text("Continue", exact=True)
