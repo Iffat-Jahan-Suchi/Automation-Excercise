@@ -11,7 +11,7 @@ class AddProducts:
         assert self.page.url == "https://automationexercise.com/products"
         name =" ".join(self.locator.first_name.inner_text().split())
         price = self.locator.first_price.inner_text()
-        self.page.mouse.wheel(0, 500)
+        self.locator.first_product.scroll_into_view_if_needed()
         self.locator.first_product.hover()
         self.locator.add_cart.click()
         self.locator.modal.wait_for(state="visible")
@@ -21,7 +21,7 @@ class AddProducts:
     def add_second_product(self):
         name =" ".join(self.locator.second_name.inner_text().split())
         price = self.locator.second_price.inner_text()
-        self.page.mouse.wheel(0, 500)
+        self.locator.first_product.scroll_into_view_if_needed()
         self.locator.second_product.hover()
         self.locator.add_sec_cart.click()
         self.locator.view_cart_btn.click()
