@@ -1,12 +1,11 @@
 from playwright.sync_api import expect
+from Locators.AlertLoc.ConfirmAlertLoc import ConfirmAlertLoc
 
-from Locators.PopUpLoc.ConfirmPopUpLoc import ConfirmPopUpLoc
 
-
-class ConfirmPopUpPage:
+class ConfirmAlertPage:
     def __init__(self,page):
         self.page=page
-        self.confirmLoc=ConfirmPopUpLoc(page)
+        self.confirmLoc=ConfirmAlertLoc(page)
 
     def confirm_popup(self):
         self.page.once("dialog", lambda dialog: dialog.accept())

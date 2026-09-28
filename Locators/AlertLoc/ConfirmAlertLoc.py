@@ -1,4 +1,4 @@
-class ConfirmPopUpLoc:
+class ConfirmAlertLoc:
     def __init__(self, page):
         self.page = page
         self.confirm_alertBtn = page.locator("//button[@id='confirm']")

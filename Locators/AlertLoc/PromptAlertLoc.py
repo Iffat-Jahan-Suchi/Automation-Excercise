@@ -1,4 +1,4 @@
-class PromptPopUpLoc:
+class PromptAlertLoc:
     def __init__(self,page):
         self.page=page
         self.prompt_alert=page.locator("//b[normalize-space()='Prompt Popup']")

@@ -1,0 +1,20 @@
+Course Category,Course,Technology / Language,Topics,Instructor,Contact
+Selenium Automation,Selenium WebDriver,Java,"Locators; Waits; Page Object Model; TestNG; Data-Driven Testing; Grid",Rajeshkumar Muthu,rajesh@genxevo.com
+Selenium Automation,Selenium WebDriver,C#,"Locators; Waits; Page Object Model; NUnit; Data-Driven Testing; Grid",Rajeshkumar Muthu,rajesh@genxevo.com
+Selenium Automation,Selenium WebDriver,JavaScript,"Locators; Waits; Page Object Model; Mocha; Async Patterns; Grid",Rajeshkumar Muthu,rajesh@genxevo.com
+Selenium Automation,Selenium WebDriver,Python,"Locators; Waits; Page Object Model; PyTest; Data-Driven Testing; Grid",Rajeshkumar Muthu,rajesh@genxevo.com
+Playwright Automation,Playwright End-to-End,JavaScript,"Locators; Auto-Waiting; Fixtures; Network Interception; Traces; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+Playwright Automation,Playwright End-to-End,TypeScript,"Typed Fixtures; Page Objects; Network Interception; Visual Testing; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+Playwright Automation,Playwright End-to-End,Python,"Locators; Sync and Async APIs; PyTest Fixtures; Traces; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+Playwright Automation,Playwright End-to-End,Java,"Locators; Assertions; JUnit Integration; Traces; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+Playwright Automation,Playwright End-to-End,C#,"Locators; Assertions; NUnit Integration; Traces; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+API Automation,API Test Automation,Java,"REST Assured; Request Specs; Schema Validation; Auth; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+API Automation,API Test Automation,Python,"Requests; PyTest; Schema Validation; Auth; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+API Automation,API Test Automation,C#,"RestSharp; NUnit; Schema Validation; Auth; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+API Automation,API Test Automation,JavaScript,"Supertest; Mocha; Schema Validation; Auth; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+API Automation,API Test Automation,TypeScript,"Typed Clients; Contract Testing; Schema Validation; Auth; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+Mobile Automation,Appium Mobile Automation,Appium with Java,"Android and iOS Setup; Locator Strategies; Gestures; Real Devices; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+Mobile Automation,Appium Mobile Automation,Appium with C#,"Android and iOS Setup; Locator Strategies; Gestures; Real Devices; CI",Rajeshkumar Muthu,rajesh@genxevo.com
+AI & Modern Automation,AI Testing,Tooling Agnostic,"Testing AI-Backed Features; Non-Deterministic Output; Evaluation Sets",Rajeshkumar Muthu,rajesh@genxevo.com
+AI & Modern Automation,AI-Assisted Testing,Tooling Agnostic,"Test Generation; Review Workflows; Maintenance; Guardrails",Rajeshkumar Muthu,rajesh@genxevo.com
+AI & Modern Automation,Building AI Agents,Tooling Agnostic,"Agent Design; Tool Use; Evaluation; Reliability",Rajeshkumar Muthu,rajesh@genxevo.com
